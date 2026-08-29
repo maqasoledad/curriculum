@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Otros Proyectos - Maqarena Soledad</title>
+  <link rel="stylesheet" href="./static/css/estilos.css" type="text/css">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./experiencialaboral.html">Experiencia Laboral</a></li>
+        <li><a href="./experienciaenrubro.html">Experiencia en Rubro</a></li>
+        <li><a href="./otrosproyectos.html">Otros Proyectos</a></li>
+      </ul>
+    </nav>
+    <h1>Maqarena Soledad</h1>
+
+    <!-- Redes sociales -->
+    <div class="redes-sociales">
+      <a href="https://www.youtube.com/@patriarcalmentereversada" target="_blank">▶ YouTube</a>
+      <a href="https://www.instagram.com/patriarcalmentereversada" target="_blank">📷 Instagram</a>
+      <a href="https://www.tiktok.com/@patriarcalmentereversada" target="_blank">🎵 TikTok</a>
+      <a href="https://open.spotify.com/artist/maqiirah" target="_blank">🎧 Spotify</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Carrusel YouTube -->
+    <section class="card-section">
+      <h2>Videos Destacados</h2>
+      <div class="carousel-yt">
+        <div class="yt-slides" id="yt-slides">
+
+          <div class="yt-slide">
+            <a href="https://www.youtube.com/@patriarcalmentereversada" target="_blank">
+              <div class="yt-play-icon">▶</div>
+              <span class="yt-title">Mapocho Poetry Slam — Presentación</span>
+              <span class="yt-sub">Ver en YouTube →</span>
+            </a>
+          </div>
+
+          <div class="yt-slide">
+            <a href="https://www.youtube.com/watch?v=TU_VIDEO_2" target="_blank">
+              <div class="yt-play-icon">▶</div>
+              <span class="yt-title">Rap &amp; Vida — Track destacado</span>
+              <span class="yt-sub">Ver en YouTube →</span>
+            </a>
+          </div>
+
+          <div class="yt-slide">
+            <a href="https://www.youtube.com/watch?v=TU_VIDEO_3" target="_blank">
+              <div class="yt-play-icon">▶</div>
+              <span class="yt-title">Colectivo Alma HipHop — Evento</span>
+              <span class="yt-sub">Ver en YouTube →</span>
+            </a>
+          </div>
+
+          <div class="yt-slide">
+            <a href="https://www.youtube.com/watch?v=TU_VIDEO_4" target="_blank">
+              <div class="yt-play-icon">▶</div>
+              <span class="yt-title">Women's Health — Taller</span>
+              <span class="yt-sub">Ver en YouTube →</span>
+            </a>
+          </div>
+
+        </div>
+        <button class="btn-prev" onclick="moveYT(-1)">&#8249;</button>
+        <button class="btn-next" onclick="moveYT(1)">&#8250;</button>
+      </div>
+    </section>
+
+    <!-- Tabla 4 columnas de proyectos -->
+    <section class="card-section">
+      <h2>Mis Proyectos</h2>
+      <div class="proyectos-grid">
+
+        <div class="proyecto-col">
+          <h3>Mapocho Poetry Slam</h3>
+          <p>Participación activa en eventos de poetry slam a orillas del Mapocho. Espacio de expresión oral, poesía en vivo y encuentro cultural independiente.</p>
+          <a class="btn-link" href="https://www.instagram.com/patriarcalmentereversada" target="_blank">Ver más</a>
+        </div>
+
+        <div class="proyecto-col">
+          <h3>Rap &amp; Vida</h3>
+          <p>Proyecto musical que fusiona rap consciente con experiencias cotidianas. Talleres, composición y presentaciones en espacios comunitarios.</p>
+          <a class="btn-link" href="https://www.youtube.com/@patriarcalmentereversada" target="_blank">Escuchar</a>
+        </div>
+
+        <div class="proyecto-col">
+          <h3>Colectivo Alma HipHop</h3>
+          <p>Colectivo de cultura hip-hop enfocado en arte urbano, música y comunidad. Organización de eventos, cypher y talleres formativos.</p>
+          <a class="btn-link" href="https://www.instagram.com/patriarcalmentereversada" target="_blank">Ver más</a>
+        </div>
+
+        <div class="proyecto-col">
+          <h3>Women's Health</h3>
+          <p>Talleres y actividades orientadas al bienestar femenino, salud integral y acompañamiento colectivo entre mujeres.</p>
+          <a class="btn-link" href="https://www.instagram.com/patriarcalmentereversada" target="_blank">Ver más</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="redes-sociales">
+      <a href="https://www.youtube.com/@patriarcalmentereversada" target="_blank">▶ YouTube</a>
+      <a href="https://www.instagram.com/patriarcalmentereversada" target="_blank">📷 Instagram</a>
+      <a href="https://www.tiktok.com/@patriarcalmentereversada" target="_blank">🎵 TikTok</a>
+      <a href="https://open.spotify.com/artist/maqiirah" target="_blank">🎧 Spotify</a>
+    </div>
+    <p>&copy; 2024 Maqarena Soledad. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="./static/js/carousel.js"></script>
+  <script>
+    // Carrusel YouTube independiente
+    let ytCurrent = 0;
+    function moveYT(dir) {
+      const slides = document.querySelectorAll('.yt-slide');
+      ytCurrent = (ytCurrent + dir + slides.length) % slides.length;
+      document.getElementById('yt-slides').style.transform = `translateX(-${ytCurrent * 100}%)`;
+    }
+    // Autoplay cada 5 segundos
+    let ytTimer = setInterval(() => moveYT(1), 5000);
+    const cyt = document.querySelector('.carousel-yt');
+    if (cyt) {
+      cyt.addEventListener('mouseenter', () => clearInterval(ytTimer));
+      cyt.addEventListener('mouseleave', () => { ytTimer = setInterval(() => moveYT(1), 5000); });
+    }
+  </script>
+
+</body>
+</html>
