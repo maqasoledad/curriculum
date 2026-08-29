@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum - Maqarena Soledad</title>
+  <link rel="stylesheet" href="./static/css/estilos.css" type="text/css">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./experiencialaboral.html">Experiencia Laboral</a></li>
+        <li><a href="./experienciaenrubro.html">Experiencia en Rubro</a></li>
+        <li><a href="./otrosproyectos.html">Otros Proyectos</a></li>
+      </ul>
+    </nav>
+    <h1>Maqarena Soledad</h1>
+  </header>
+
+  <main>
+
+    <!-- SECCIÓN PRINCIPAL: carrusel + sobre mí en tabla -->
+    <section class="hero-section">
+      <div class="hero-table">
+
+        <!-- Columna izquierda: carrusel -->
+        <div class="hero-left">
+          <div class="carousel">
+            <div class="slides" id="slides">
+              <div class="slide">
+                <img src="static/img/foto2.jpg" alt="Mi foto profesional">
+              </div>
+              <div class="slide">
+                <img src="static/img/foto1.jpg" alt="Proyecto 1">
+              </div>
+                <div class="slide">
+                <img src="static/img/foto3.jpg" alt="Proyecto 1">
+              </div>
+            </div>
+            <button class="btn-prev" onclick="move(-1)">&#8249;</button>
+            <button class="btn-next" onclick="move(1)">&#8250;</button>
+          </div>
+        </div>
+
+        <!-- Columna derecha: Sobre mí -->
+        <div class="hero-right">
+          <h2>Sobre Mí</h2>
+          <p>Estudiante &amp; trabajadora.</p>
+          <p>Técnica Nivel Medio en Telecomunicaciones.<br>
+             <span class="school">Liceo Politécnico Andes</span></p>
+          <p>Ingeniería en Telecomunicaciones, tercer año.<br>
+             <span class="school">Inacap</span></p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Cursos destacados -->
+    <section class="card-section">
+      <h2>Cursos Destacados</h2>
+      <ul>
+        <li><a href="#">2026: Curso: Bootcamp Java</a></li>
+
+        <li><a href="#">2025: Curso: Bootcamp Python</a></li>
+
+        <li><a href="#">Curso: Mujer, participación política &amp; social | UMCE</a></li>
+      </ul>
+    </section>
+
+    <!-- Diplomas -->
+    <section class="card-section">
+      <h2>Enseñanza media</h2>
+      <p>Técnica Nivel medio en Telecomunicaciones | Liceo Politécnico Andes, Renca</p>
+      <h2>Enseñanza superior</h2>
+      <p>Ingeniería en Telecomunicaciones | Inacap Santiago Sur</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Maqarena Soledad. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="./static/js/carousel.js"></script>
+</body>
+</html>
