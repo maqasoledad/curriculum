@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiencia en Rubro - Telecomunicaciones - Maqarena Soledad</title>
+  <link rel="stylesheet" href="./static/css/estilos.css" type="text/css">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./experiencialaboral.html">Experiencia Laboral</a></li>
+        <li><a href="./experienciaenrubro.html">Experiencia en Rubro</a></li>
+        <li><a href="./otrosproyectos.html">Otros Proyectos</a></li>
+      </ul>
+    </nav>
+    <h1>Maqarena Soledad</h1>
+  </header>
+
+  <main>
+    <section class="card-section">
+      <h2>Experiencia en Telecomunicaciones</h2>
+
+      <table class="tabla-experiencia">
+        <thead>
+          <tr>
+            <th>Empresa</th>
+            <th>Período</th>
+            <th>Funciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CafeStore LTDA</td>
+            <td>Marzo 2026</td>
+            <td>Técnica Hidráulica (reparación de máquinas de café)</td>
+          </tr>
+          <tr>
+            <td>Konecta / Entel</td>
+            <td>Agosto 2021 – Diciembre 2022</td>
+            <td>Ejecutiva de Atención a Clientes</td>
+          </tr>
+          <tr>
+            <td>Sercomed / Mutual de Seguridad</td>
+            <td>Octubre 2020 – Enero 2021</td>
+            <td>Ejecutiva de Agendamiento de horas médicas</td>
+          </tr>
+          <tr>
+            <td>Sercomed / Isapre Consalud</td>
+            <td>Enero 2021 – Agosto 2021</td>
+            <td>Ejecutiva de Capacitación Ingresos Nuevos</td>
+          </tr>
+          <tr>
+            <td>Upcom / Claro Chile</td>
+            <td>Septiembre 2019 – Octubre 2020</td>
+            <td>Ejecutiva de Servicio Postventa (segmento empresa)</td>
+          </tr>
+          <tr>
+            <td>DuocUC</td>
+            <td>Octubre 2013 – Enero 2014</td>
+            <td>Ayudante de Soporte Técnico</td>
+          </tr>
+          <tr>
+            <td>Sura Chile / AFP Capital</td>
+            <td>Abril 2012 – Octubre 2013</td>
+            <td>Agente Mesa de Ayuda, Soporte Técnico. Técnico en terreno desde Julio 2013</td>
+          </tr>
+          <tr>
+            <td>Automóvil Club de Chile</td>
+            <td>Diciembre 2011 – Marzo 2012</td>
+            <td>Soporte Tecnológico (práctica profesional)</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Maqarena Soledad. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
